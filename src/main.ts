@@ -3,6 +3,10 @@ import { invoke } from '@tauri-apps/api/core';
 import './style.css';
 const appIcon = new URL('../assets/kmcero-icon-master.png', import.meta.url).href;
 const heroImage = new URL('../assets/hero-servicentro.png', import.meta.url).href;
+const favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.href = appIcon;
+document.head.append(favicon);
 type Overview = {stations:number;tanks:number;products:number;recorded_movements:number};
 const menu = [
  ['layout-dashboard','Resumen general'],['truck','Recepción cisternas'],['database','Tanques e inventarios'],
