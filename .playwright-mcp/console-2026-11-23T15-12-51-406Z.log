@@ -1,0 +1,5 @@
+[     932ms] [INFO] Tauri no disponible TypeError: Cannot read properties of undefined (reading 'invoke')
+    at invoke (http://127.0.0.1:5173/node_modules/.vite/deps/@tauri-apps_api_core.js?v=b715bb72:128:37)
+    at update (http://127.0.0.1:5173/src/main.ts:28:21)
+    at http://127.0.0.1:5173/src/main.ts:45:6 @ http://127.0.0.1:5173/src/main.ts:32
+[    1524ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:1
