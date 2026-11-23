@@ -6,3 +6,4 @@ src-tauri/target/
 *.sqlite3-wal
 .env
 /.serena
+/Control producto KMCero/
