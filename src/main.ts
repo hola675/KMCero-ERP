@@ -1,6 +1,8 @@
 // KMCero ERP 0.1.0 - 2026-11-23
 import { invoke } from '@tauri-apps/api/core';
 import './style.css';
+const appIcon = new URL('../assets/kmcero-icon-master.png', import.meta.url).href;
+const heroImage = new URL('../assets/hero-servicentro.png', import.meta.url).href;
 type Overview = {stations:number;tanks:number;products:number;recorded_movements:number};
 const menu = [
  ['layout-dashboard','Resumen general'],['truck','Recepción cisternas'],['database','Tanques e inventarios'],
@@ -8,8 +10,8 @@ const menu = [
  ['shield-check','Seguridad e incidentes'],['settings','Configuración']
 ];
 const app = document.querySelector<HTMLDivElement>('#app')!;
-const illustration = '/servicentro.jpg';
-app.innerHTML=`<div class="layout"><aside class="sidebar"><div class="brand"><img src="/logo.jpg" alt="Logo KMCero"><div><b>KMCero</b><span>ERP / Servicentros</span></div></div>
+const illustration = heroImage;
+app.innerHTML=`<div class="layout"><aside class="sidebar"><div class="brand"><img src="${appIcon}" alt="Logo KMCero"><div><b>KMCero</b><span>ERP / Servicentros</span></div></div>
 <div class="group-label">OPERACIONES</div><nav>${menu.map((m,i)=>`<button class="nav ${i===0?'selected':''}" data-section="${i}"><span class="nav-symbol">${['▦','⇥','◫','⛽','✓','▤','◇','⚙'][i]}</span>${m[1]}</button>`).join('')}</nav>
 <div class="side-bottom"><div class="status-dot"></div>Base local · Modo inicial<br><small>Versión 0.1.0</small></div></aside>
 <main><header><div><span class="eyebrow">PANEL OPERATIVO</span><h1 id="title">Resumen general</h1><p id="subtitle">Gestión integral de recepción y comercialización de combustible</p></div><span class="chip">PROTOTIPO · Sin datos reales</span></header>

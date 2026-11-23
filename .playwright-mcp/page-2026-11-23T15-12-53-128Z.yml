@@ -1,0 +1,85 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - img "Logo KMCero" [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]: KMCero
+        - text: ERP / Servicentros
+    - generic [ref=e9]: OPERACIONES
+    - navigation [ref=e10]:
+      - button "▦ Resumen general" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: ▦
+        - text: Resumen general
+      - button "⇥ Recepción cisternas" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: ⇥
+        - text: Recepción cisternas
+      - button "◫ Tanques e inventarios" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: ◫
+        - text: Tanques e inventarios
+      - button "⛽ Ventas y despachos" [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: ⛽
+        - text: Ventas y despachos
+      - button "✓ Cierre y balances" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: ✓
+        - text: Cierre y balances
+      - button "▤ Informes oficiales" [ref=e21] [cursor=pointer]:
+        - generic [ref=e22]: ▤
+        - text: Informes oficiales
+      - button "◇ Seguridad e incidentes" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: ◇
+        - text: Seguridad e incidentes
+      - button "⚙ Configuración" [ref=e25] [cursor=pointer]:
+        - generic [ref=e26]: ⚙
+        - text: Configuración
+    - generic [ref=e27]: Base local · Modo inicialVersión 0.1.0
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - text: PANEL OPERATIVO
+        - heading "Resumen general" [level=1] [ref=e32]
+        - paragraph [ref=e33]: Vista preliminar en navegador. Los indicadores requieren Tauri.
+      - generic [ref=e34]: PROTOTIPO · Sin datos reales
+    - generic [ref=e36]:
+      - text: CONTROL DE OPERACIONES
+      - heading "Combustible bajo control. Desde la recepción hasta el despacho." [level=2] [ref=e37]: Combustible bajo control.Desde la recepción hasta el despacho.
+      - paragraph [ref=e38]: Inventarios físicos, movimientos por lote, cinco modalidades de venta y trazabilidad documental.
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - article [ref=e41]:
+          - generic [ref=e42]: Servicentros registrados
+          - strong [ref=e43]: —
+          - text: Estructura multiestación
+        - article [ref=e44]:
+          - generic [ref=e45]: Tanques configurados
+          - strong [ref=e46]: —
+          - text: Inventario físico
+        - article [ref=e47]:
+          - generic [ref=e48]: Productos
+          - strong [ref=e49]: —
+          - text: Catálogo de combustibles
+        - article [ref=e50]:
+          - generic [ref=e51]: Movimientos registrados
+          - strong [ref=e52]: —
+          - text: Libro de operaciones
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - heading "Flujo operativo" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Secuencia propuesta basada en los procedimientos de KMCero.
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "01"
+            - generic [ref=e61]: Planificar recepción
+            - generic [ref=e62]: Documento, capacidad y seguridad
+          - generic [ref=e63]:
+            - generic [ref=e64]: "02"
+            - generic [ref=e65]: Medir y recibir
+            - generic [ref=e66]: Volumen, tanque y lote
+          - generic [ref=e67]:
+            - generic [ref=e68]: "03"
+            - generic [ref=e69]: Registrar despachos
+            - generic [ref=e70]: Modalidad y comprobante
+          - generic [ref=e71]:
+            - generic [ref=e72]: "04"
+            - generic [ref=e73]: Conciliar y cerrar
+            - generic [ref=e74]: Inventario, mermas y reportes
+    - generic [ref=e75]: KMCero ERP · Plataforma local-first · Tauri + Rust + SQLite
